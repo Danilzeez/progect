@@ -1,5 +1,10 @@
-.main {
+body {
+    background-color: #8bc34a;
+}
+
+.main1 {
     display: flex;
+
 }
 
 .log{
@@ -8,10 +13,12 @@
 
 .txt_1 {
     font-family: fantasy, sans-serif;
+    color: aqua;
   }
     
 .web {
     flex: 30%;
+
 }
 
   nav { background-color: #dcedc8; }
