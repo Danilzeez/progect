@@ -1,0 +1,25 @@
+.main {
+    display: flex;
+}
+
+.log{
+    flex: 70%;
+}
+
+.txt_1 {
+    font-family: fantasy, sans-serif;
+  }
+    
+.web {
+    flex: 30%;
+}
+
+  nav { background-color: #dcedc8; }
+nav a { float: left; display: block; }
+nav a:hover { background-color: #8bc34a; }
+nav a.active { background-color: #8bc34a; color: #fff; }
+nav .search-box { float: right; }
+nav input[type=text] { padding: 5px; margin-top: 7px; border: none; }
+nav .search-box button { float: right; padding: 5px; margin-top: 7px; margin-right: 15px; background: #8bc34a; border: none; cursor: pointer; }
+nav .search-box button:hover { background: #bdbdbd; 
+}
