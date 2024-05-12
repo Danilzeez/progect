@@ -1,5 +1,4 @@
 body {
-    background-color: #8bc34a;
 }
 
 .main1 {
@@ -12,8 +11,9 @@ body {
 }
 
 .txt_1 {
-    font-family: fantasy, sans-serif;
-    color: aqua;
+    font-family: fantasy,;
+    color: rgb(0, 0, 0);
+    text-align: center;
   }
     
 .web {
