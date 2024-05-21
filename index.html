@@ -1,121 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html >
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web</title>
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-<link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<div class="contener">
-  <div class="main">
-<div class="block1">
-    <div class="main1">
-        <div class="log">
-         <h1 class="txt_1">GIFT & MARCH</h1>  
-        </div>
-        <div class="web">
-            <nav>
-                <div class="search-box">
-                  <form action="#">
-                    <form id="search-form">
-                      <div class="search">
-                        <input type="text" name="search" class="round" />
-                        <input type="submit" class="corner" value="" />
-                      </div>
-                  </form>
-                  </form>
-                </div>
-              </nav>
-        </div>
-        <div class="namber">
-             <h2 class="number" style="width: 200px; height: 40px;">+380 630 130 103</h2>
-        </div>
-        <div class="login"> 
-          <a href=""> <img src="🌈 COLOR.png" style="width: 40px; height: 40px;"></a> 
-        </div>
-        <div class="lang"> <button><h1>RU/ENG</h1></button><h1></h1></div>
-    </div>
-</div>
-<div class="block2">
-  <div class="dropdown">
-    <button class="dropbtn"> <small>Выпадающий</small></button>
-    <div class="dropdown-content">
-      <a href="#">Ссылка 1</a>
-      <a href="#">Ссылка 2</a>
-      <a href="#">Ссылка 3</a>
-    </div>
-</div> 
-   <div class="dropdown1">
-    <button class="dropbtn1"> <small>Выпадающий</small></button>
-      <div class="dropdown-content1">
-        <a href="#">Ссылка 1</a>
-        <a href="#">Ссылка 2</a>
-        <a href="#">Ссылка 3</a>
-        </div>
-   </div>
-   <div class="dropdown2">
-    <button class="dropbtn2"> <small>Выпадающий</small></button>
-    <div class="dropdown-content2">
-      <a href="#">Ссылка 1</a>
-      <a href="#">Ссылка 2</a>
-      <a href="#">Ссылка 3</a>
-      </div>
- </div>
- <div class="dropdown3">
-  <button class="dropbtn3"> <small>Выпадающий</small></button>
-  <div class="dropdown-content3">
-    <a href="#">Ссылка 1</a>
-    <a href="#">Ссылка 2</a>
-    <a href="#">Ссылка 3</a>
-    </div>
-</div>
-<div class="dropdown4">
-  <button class="dropbtn4"> <small>Выпадающий</small></button>
-  <div class="dropdown-content4">
-    <a href="#">Ссылка 1</a>
-    <a href="#">Ссылка 2</a>
-    <a href="#">Ссылка 3</a>
-    </div>
-</div>
-<div >
-<h1 class="text_shop">Шопперы со скидкой - 25%</h1>
-</div>
-<div class="shoper">
-  <img src="157 1.png" class="shoper_img" alt="Transparent Borders" style="width: 100%; height: 100%; size: left;" >
-</div>
-</div>
-</div>
-<div class="main3">
-  <div class="dp">
-  <div class="wrapped-text">
-<h1>Свежее дыхание в
-   корпоративной жизни
-</h1> 
- <h3>Ми вдосконалили процес замовлення продукції для того, щоб Ви і Ваша компанія сконцентрувались на основних задачах і досягали поставлених цілей.</h3>
-</div>
-<div class="dp_img">
-<img src="fashion-portrait-two-stylish-sexy-hipster-girls-best-friends-wearing-cute-swag-outfits-hats-gray-backround-removebg-preview 1.png" height="650px" margin-top="-30px" >
-</div>
-</div>
-<div class="wtf">
-  <img src="circle.png" alt="" class="wtf1">
-  <img src="circle.png" alt="" class="wtf2">
-  <img src="circle.png" alt="" class="wtf3">
+  <meta charset="UTF-8">
+  <title>Log in/Sign up screen animation</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
 
-</div>
-  <div>
-    <small class="text_dp1">Высокое качество ONLY</small>
-      <small class="text_dp2"> Поддержка менеджера 24/7</small>
-        <small class="text_dp3"> Выполнение заказов в TURBO-режиме</small>
+  
+</head>
+
+<body>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+
+<div class="container">
+  <div class="frame">
+    <div class="nav">
+      <ul class"links">
+        <li class="signin-active"><a class="btn">Авторизация</a></li>
+        <li class="signup-inactive"><a class="btn">Регистрация </a></li>
+      </ul>
+    </div>
+    <div ng-app ng-init="checked = false">
+				        <form class="form-signin" action="regauth/vendor/avtorizup.php" method="post" name="form">
+          <label for="username">Email</label>
+          <input class="form-styling" type="text" name="email" placeholder=""/>
+          <label for="password">Password</label>
+          <input class="form-styling" type="text" name="password" placeholder=""/>
+          <input type="checkbox" id="checkbox"/>
+          <label for="checkbox" ><span class="ui"></span>Keep me signed in</label>
+          <div class="btn-animate"><buttonc class="btn-signin" type="submit">Sign in</button>
+            <!-- <a class="btn-signin">Sign in</a> -->
+          </div>
+				        </form> 
+        
+				        <form class="form-signup" action="regauth/vendor/signup .php" method="post" name="form"> <!--в action - ссылку на php-->
+          <label for="fullname">Full name</label>
+          <input class="form-styling" type="text" name="full_name" placeholder=""/>
+          <label for="email">Email</label>
+          <input class="form-styling" type="text" name="email" placeholder=""/>
+          <label for="password">Password</label>
+          <input class="form-styling" type="text" name="password" placeholder=""/>
+          <label for="confirmpassword">Confirm password</label>
+          <input class="form-styling" type="text" name="confirmpassword" placeholder=""/>
+         <button class="reg" type="submit"> <!-- <a ng-click="checked = !checked" class="btn-signup">-->Sign Up  <!--</a>--></button> 
+				        </form>
+      
+            <!-- <div  class="success">
+              <svg width="270" height="270" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+       viewBox="0 0 60 60" id="check" ng-class="checked ? 'checked' : ''">
+                 <path fill="#ffffff" d="M40.61,23.03L26.67,36.97L13.495,23.788c-1.146-1.147-1.359-2.936-0.504-4.314
+                  c3.894-6.28,11.169-10.243,19.283-9.348c9.258,1.021,16.694,8.542,17.622,17.81c1.232,12.295-8.683,22.607-20.849,22.042
+                  c-9.9-0.46-18.128-8.344-18.972-18.218c-0.292-3.416,0.276-6.673,1.51-9.578" />
+                <div class="successtext">
+                   <p> Thanks for signing up! Check your email for confirmation.</p>
+                </div>
+             </div> -->
+      </div>
+      
+      <div class="forgot">
+        <a href="#">Forgot your password?</a>
+      </div>
+      
+      <div>
+        <!-- <div class="cover-photo"></div> -->
+        <!-- <div class="profile-photo"></div> -->
+        <!-- <h1 class="welcome">Welcome, Chris</h1>
+        <a class="btn-goback" value="Refresh" onClick="history.go()">Go back</a> -->
+      </div>
   </div>
+    
+  <a id="refresh" value="Refresh" onClick="history.go()">
+    <svg class="refreshicon"   version="1.1" id="Capa_1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         width="25px" height="25px" viewBox="0 0 322.447 322.447" style="enable-background:new 0 0 322.447 322.447;"
+         xml:space="preserve">
+         <path  d="M321.832,230.327c-2.133-6.565-9.184-10.154-15.75-8.025l-16.254,5.281C299.785,206.991,305,184.347,305,161.224
+                c0-84.089-68.41-152.5-152.5-152.5C68.411,8.724,0,77.135,0,161.224s68.411,152.5,152.5,152.5c6.903,0,12.5-5.597,12.5-12.5
+                c0-6.902-5.597-12.5-12.5-12.5c-70.304,0-127.5-57.195-127.5-127.5c0-70.304,57.196-127.5,127.5-127.5
+                c70.305,0,127.5,57.196,127.5,127.5c0,19.372-4.371,38.337-12.723,55.568l-5.553-17.096c-2.133-6.564-9.186-10.156-15.75-8.025
+                c-6.566,2.134-10.16,9.186-8.027,15.751l14.74,45.368c1.715,5.283,6.615,8.642,11.885,8.642c1.279,0,2.582-0.198,3.865-0.614
+                l45.369-14.738C320.371,243.946,323.965,236.895,321.832,230.327z"/>
+    </svg>
+  </a>
 </div>
-<div class="wave"></div>
-</div>
-</div>
-    <script src="script.js" type="text/babel"></script>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js'></script>
+
+    <script src="js/index.js"></script>
+
 </body>
 </html>
