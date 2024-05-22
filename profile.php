@@ -2,7 +2,7 @@
 session_start();
 
 $connect =  mysqli_connect('Localhost', 'root', '', 'gg');
-if (!$_SESSION['users']);{
+if (!$_SESSION['users']){
     header('Location: /');
 }
 ?>
@@ -23,7 +23,7 @@ if (!$_SESSION['users']);{
         <img src="<?= $_SESSION['users'] ?>" alt="">
          <h2 style="margin: 10px 0;"><?=$_SESSION['users']['name'] ?></h2>
          <a href='#'> <?= $_SESSION['users']['email']?></a>
-        <a href="index.php" class=logout> Выход </a>
+        <a href="logout.php" class=logout> Выход </a>
     </form>
 </body>
 </html>
