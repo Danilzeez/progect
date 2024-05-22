@@ -22,9 +22,9 @@ if (mysqli_num_rows($checkuser) > 0) {
     header('Location: ../profile.php');
 
 
-    echo "Вы авторизовались как: <br>";
+    // echo "Вы авторизовались как: <br>";
 
-    echo $user['name'];
+    // echo $user['name'];
 
 
 
