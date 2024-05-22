@@ -1,5 +1,5 @@
 <?php
- $connect =  mysqli_connect('reg', 'root', '', 'users');
+ $connect =  mysqli_connect('reg', 'root', '', 'gg');
 session_start();
 require_once 'connect.php';
 

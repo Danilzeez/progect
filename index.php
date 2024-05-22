@@ -1,13 +1,13 @@
 <?php 
 session_start();
-$connect =  mysqli_connect('reg', 'root', '', 'users');
+$connect =  mysqli_connect('reg', 'root', '', 'gg');
 if ($_SESSION['user']){
     header('Locatoin profile.php');
 
 }
 
 ?>
-<!DOCTYPE html>
+<!DOCTYPE html>3
 <html lang="en">
 <head>
     <meta charset="UTF-8">
