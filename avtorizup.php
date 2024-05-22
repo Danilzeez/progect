@@ -17,21 +17,16 @@ if (mysqli_num_rows($checkuser) > 0) {
     $_SESSION['user'] = [
         "id" => $user['id'],
         "name" => $user['name'],
-        
         "email" => $user['email']
     ];
 
     header('Location: ../profile.php');
-
-
     echo "Вы авторизовались как: <br>";
 
     echo $user['name'];
 
-
-
 } else {
-    $_SESSION['message'] = "Неверный логин или пароль";
+    $_SESSION['message'] = "Неверный Email или номер";
     header('Location: ../index.php');
 }
 
