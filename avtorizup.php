@@ -7,7 +7,7 @@ $name = $_POST['name'];
 $email = $_POST['email'];
 
 // Prepare the SQL query to prevent SQL injection
-$stmt = $connect->prepare("SELECT * FROM `users` WHERE `name` = ? AND `email` = ?");
+$stmt = $connect->prepare("SELECT * FROM `users` WHERE `name` = $name AND `email` = $email");
 $stmt->bind_param("ss", $name, $email);
 $stmt->execute();
 $result = $stmt->get_result();
