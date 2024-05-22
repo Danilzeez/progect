@@ -1,5 +1,7 @@
 <?php
 session_start();
+
+$connect =  mysqli_connect('reg', 'root', '', 'users');
 if (!$_SESSION['users']);{
     header('Location: /');
 }

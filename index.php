@@ -1,6 +1,6 @@
 <?php 
 session_start();
-
+$connect =  mysqli_connect('reg', 'root', '', 'users');
 if ($_SESSION['user']){
     header('Locatoin profile.php');
 

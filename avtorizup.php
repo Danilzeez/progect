@@ -1,7 +1,8 @@
 <?php
+ $connect =  mysqli_connect('reg', 'root', '', 'users');
 session_start();
 require_once 'connect.php';
-$connect = mysqli_connect('reg','root', '', 'gg');
+
 
 
 $name = $_POST['name'];
