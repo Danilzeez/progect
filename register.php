@@ -15,7 +15,7 @@ if ($_SESSION['user']){
 
 </head>
 <body>
-<form action="avtorizup.php" method="post">
+<form action="signup.php" method="post">
             <div class="form-group">
                 <input type="text" id="name" name="name" placeholder="Ваше Имя">
                 <input type="email" id="email" name="email" placeholder="Ваша электронная почта">
