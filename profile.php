@@ -22,10 +22,10 @@ if (!$_SESSION['users']);{
 
 
     <form>  
-        <img src="<?= $_SESSION['user'] ?>" alt="">
-         <h2 style="margin: 10px 0;"><?=$_SESSION['user']['name'] ?></h2>
+        <img src="<?= $_SESSION['users'] ?>" alt="">
+         <h2 style="margin: 10px 0;"><?=$_SESSION['users']['name'] ?></h2>
          <a href='#'> <?= $_SESSION['users']['email']?></a>
-        <a href="" class=logout> Выход </a>
+        <a href="index.php" class=logout> Выход </a>
     </form>
 </body>
 </html>
