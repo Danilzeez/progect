@@ -33,10 +33,10 @@ $confirm_email = $_POST['confirm_email']; // Assuming there is a field for confi
      $_SESSION['message'] = "Email не совпадают";
      header('Location: ../register.php');
      exit();
- } 
+ } -->
  
-
-    $connect =  mysqli_connect('localhost', 'root', '', 'users');
+<?php
+     $connect =  mysqli_connect('localhost', 'root', '', 'users');
         session_start();
         require_once 'connect.php';
 
@@ -51,57 +51,55 @@ $confirm_email = $_POST['confirm_email']; // Assuming there is a field for confi
 
             $_SESSION['message'] = 'Регистрация прошла успешно!';
             header('Location: ../register.php');
-
-
         } 
-        else {
-            $_SESSION['message'] = 'Email не совпадают';
-            header('Location: ..//register.php');
-        }
- -->
+        // else {
+        //     $_SESSION['message'] = 'Email не совпадают';
+        //     header('Location: ..//register.php');
+        // }
+ ?>
  
 
 
 
-<?php
-require_once 'connect.php'; // Подключаем файл соединения с базой данных
-session_start();
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Получаем данные из формы
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $confirm_email = $_POST['confirm_email'];
-    $number = $_POST['number'];
+<!-- // require_once 'connect.php'; // Подключаем файл соединения с базой данных
+// session_start();
 
-    // Проверяем, совпадают ли email и подтверждение email
-    if ($email === $confirm_email) {
-        // Готовим SQL-запрос для предотвращения SQL-инъекций
-        $stmt = $connect->prepare("INSERT INTO `users` (`id`, `name`, `email`, `number`) VALUES (NULL, ?, ?, ?)");
-        $stmt->bind_param("sss", $name, $email, $number);
-        echo "SQL: $sql<br>";
+// if ($_SERVER["REQUEST_METHOD"] == "POST") {
+//     // Получаем данные из формы
+//     $name = $_POST['name'];
+//     $email = $_POST['email'];
+//     $confirm_email = $_POST['confirm_email'];
+//     $number = $_POST['number'];
 
-        // Выполняем запрос и проверяем успех
-        if ($stmt->execute()) {
-            $_SESSION['message'] = "Регистрация прошла успешно!";
-            header('Location: register_success.php'); // Перенаправляем на страницу успешной регистрации
-            exit();
-        } else {
-            $_SESSION['message'] = "Ошибка регистрации: " . $stmt->error;
-            header('Location: register.php'); // Перенаправляем обратно на страницу регистрации
-            exit();
-        }
+//     // Проверяем, совпадают ли email и подтверждение email
+//     if ($email === $confirm_email) {
+//         // Готовим SQL-запрос для предотвращения SQL-инъекций
+//         $stmt = $connect->prepare("INSERT INTO `users` (`id`, `name`, `email`, `number`) VALUES (NULL, ?, ?, ?)");
+//         $stmt->bind_param("sss", $name, $email, $number);
+//         echo "SQL: $sql<br>";
 
-        // Закрываем запрос и соединение
-        $stmt->close();
-        $connect->close();
-    } else {
-        $_SESSION['message'] = "Email не совпадают";
-        header('Location: register.php'); // Перенаправляем обратно на страницу регистрации
-        exit();
-    }
-}
-?>
+//         // Выполняем запрос и проверяем успех
+//         if ($stmt->execute()) {
+//             $_SESSION['message'] = "Регистрация прошла успешно!";
+//             header('Location: register_success.php'); // Перенаправляем на страницу успешной регистрации
+//             exit();
+//         } else {
+//             $_SESSION['message'] = "Ошибка регистрации: " . $stmt->error;
+//             header('Location: register.php'); // Перенаправляем обратно на страницу регистрации
+//             exit();
+//         }
+
+//         // Закрываем запрос и соединение
+//         $stmt->close();
+//         $connect->close();
+//     } else {
+//         $_SESSION['message'] = "Email не совпадают";
+//         header('Location: register.php'); // Перенаправляем обратно на страницу регистрации
+//         exit();
+//     }
+// }
+?> -->
 
 
 
