@@ -1,5 +1,6 @@
 
 html, body{
+  margin-left: 30px;
   height: 100%;
   margin:0
 }
@@ -19,6 +20,7 @@ main {
 }
 
 .log{
+  margin-top: 5px;
     flex: 20%;
 }
 
@@ -29,15 +31,18 @@ main {
   }
     
 .web {
-    flex: 30%;
+  margin-top: 30px;
+    flex: 40%;
+    width: 50px;
 
 }
 
 .round {
-  width: 100%;
-  border-radius: 15px;
-  border: 1px #503030 solid;
-  padding: 5px 5px 5px 25px;
+  height: 20px;
+  width: 540px;
+  border-radius: 45px;
+  border: 2px #503030 solid;
+  padding: 7px 5px 5px 25px;
   position: absolute;
   top: 0;
   left: 0;
@@ -53,35 +58,55 @@ main {
   z-index: 8;
   border-radius: 10px;
   border: none;
-  background: #000000; /* Set the bg image here. with "no-repeat" */
+  background: #000000; 
 }
 
 .search {
-  flex: 30%;
   position: relative;
   width: 210px;
   height: 30px;
 }
 
+.namber1 {
+    flex: 30%;
+    font-size: 20px;
+    border-radius: 8px;
+    width: 00px;
+}
+
 .number {
-  flex: 25%;
     background-color: #28a745;
     color: #fff;
     padding: 10px;
     text-align: center;
     font-size: 20px;
     border-radius: 8px;
-    width: 200px;
-    margin: 10% auto; /* Центрирование прямоугольника на странице */
+    width: 50px;
+    margin-left: 60px;
+
 }
 
-.logi {
-  flex: 15%;
+.login {
+  flex: 2%;
+margin-top:26px ;
 }
 
-.lang {
-  flex: 10%;
-  size: left;
+.lang {margin-top: 10px;
+  flex: 40%;
+  size: center;
+  margin-right: 10px;
+}
+
+.lang button {
+  background-color: transparent;
+  border: none;
+  color: black; /* Цвет текста */
+  font-size: 20px; /* Размер текста */
+  cursor: pointer;
+}
+
+.lang button:hover {
+  text-decoration: underline; /* Подчеркнуть текст при наведении */
 }
 
 .block2 {
@@ -268,12 +293,17 @@ main {
   display: inline-block;
 }
 
+.text_shop1 {
+    margin-left: 50px;
+}
+
 .text_shoper {
   flex: 30%;
-  
+
 }
 
 .shoper_img {
+  margin-left: 60%;
   display: block;
   opacity: 0.5; /* Устанавливает полупрозрачность изображения */
 }
@@ -591,10 +621,7 @@ margin-left: 122px;
   transform: rotate(10deg);
 }
 
-.header-image {
-  margin-left: 40px;
-  position: relative;
-}
+
 
 .header-image::before {
   margin-left: 40px;
@@ -686,4 +713,88 @@ button:hover {
   .form-group {
       flex-direction: column;
   }
+}
+
+.footer {
+  margin-left: 30px;
+  background-color: #fff;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer div {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.footer div:last-child {
+  margin-right: 0;
+}
+
+.footer h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
+.footer a {
+  color: #000;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+.footer .category-list,
+.footer .info-list {
+  list-style: none;
+  padding: 0;
+}
+
+.footer .category-list li,
+.footer .info-list li {
+  margin-bottom: 10px;
+}
+
+.footer .contact-form {
+  display: flex;
+  align-items: center;
+}
+
+.footer .contact-form input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 25px 0 0 25px;
+  outline: none;
+  width: 200px;
+}
+
+.footer .contact-form button {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-radius: 0 25px 25px 0;
+  background-color: #f8f8f8;
+  cursor: pointer;
+}
+
+
+
+.footer .privacy-policy {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #999;
 }
