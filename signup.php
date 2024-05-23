@@ -37,21 +37,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
  <?php
         $connect =  mysqli_connect('localhost', 'root', '', 'users');
         session_start();
