@@ -1,8 +1,6 @@
 <?php
- $connect =  mysqli_connect('reg', 'root', '', 'gg');
 session_start();
 require_once 'connect.php';
-
 
 
 $name = $_POST['name'];
@@ -17,16 +15,21 @@ if (mysqli_num_rows($checkuser) > 0) {
     $_SESSION['user'] = [
         "id" => $user['id'],
         "name" => $user['name'],
+        
         "email" => $user['email']
     ];
 
     header('Location: ../profile.php');
-    echo "Вы авторизовались как: <br>";
 
-    echo $user['name'];
+
+    // echo "Вы авторизовались как: <br>";
+
+    // echo $user['name'];
+
+
 
 } else {
-    $_SESSION['message'] = "Неверный Email или номер";
+    $_SESSION['message'] = "Неверный логин или пароль";
     header('Location: ../index.php');
 }
 

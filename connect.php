@@ -1,6 +1,6 @@
-<?php
-    $connect =  mysqli_connect('reg', 'root', '', 'users');
+<?php 
+$connect = mysqli_connect('localhost','root','','gg');
 
-    if (!$connect){
-        die ('Error connect to Database');
-    }
+if (!$connect){
+        die ('Error connect  to DataBase');
+}

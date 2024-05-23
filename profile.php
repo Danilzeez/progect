@@ -1,8 +1,8 @@
 <?php
 session_start();
 
-$connect =  mysqli_connect('reg', 'root', '', 'gg');
-if (!$_SESSION['users']);{
+$connect =  mysqli_connect('localhost', 'root', '', 'gg');
+if (!$_SESSION['users']){
     header('Location: /');
 }
 ?>
@@ -12,8 +12,6 @@ if (!$_SESSION['users']);{
 <head>
   <meta charset="UTF-8">
       <link rel="stylesheet" href="css/style.css">
-
-  
 </head>
 <body>
 
@@ -22,10 +20,10 @@ if (!$_SESSION['users']);{
 
 
     <form>  
-        <img src="<?= $_SESSION['user'] ?>" alt="">
-         <h2 style="margin: 10px 0;"><?=$_SESSION['user']['name'] ?></h2>
+        <img src="<?= $_SESSION['users'] ?>" alt="">
+         <h2 style="margin: 10px 0;"><?=$_SESSION['users']['name'] ?></h2>
          <a href='#'> <?= $_SESSION['users']['email']?></a>
-        <a href="" class=logout> Выход </a>
+        <a href="logout.php" class=logout> Выход </a>
     </form>
 </body>
 </html>
