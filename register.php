@@ -24,7 +24,7 @@ if ($_SESSION['user']){
             <button type="submit">Заказать</button>
             <?php
                 if ($_SESSION['message']){
-                        echo '<p class=msg>' . $_SESSION['message'] . ' </p>';
+                        echo '<p class=msg>' . $_SESSION['message'] = '$name,$number'. ' </p>';
                 }
                 unset($_SESSION['message']);
                 
