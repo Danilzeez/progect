@@ -8,7 +8,7 @@
         $email = $_POST ['email'];
         $number = $_POST['number'];
 
-         if ($email === $email) {
+         {
 
             mysqli_query($connect, "INSERT INTO `users` (`id`, `name`, `email`, `number`) VALUES (NULL, '$name', '$email', '$number')");
 
@@ -17,10 +17,10 @@
 
 
         }
-        else {
-            $_SESSION['message'] = 'Email не совпадают';
-            header('Location: ..//register.php');
-        }
+        // else {
+        //     $_SESSION['message'] = 'Email не совпадают';
+        //     header('Location: ..//register.php');
+        // }
 ?>
 
 
