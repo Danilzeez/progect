@@ -45,7 +45,7 @@ $confirm_email = $_POST['confirm_email']; // Assuming there is a field for confi
         $email = $_POST ['email'];
         $number = $_POST['number'];
 
-         {
+         { 
 
             mysqli_query($connect, "INSERT INTO `users` (`id`, `name`, `email`, `number`) VALUES (NULL, '$name', '$email', '$number')");
 

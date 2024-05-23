@@ -26,10 +26,10 @@ if (mysqli_num_rows($checkuser) > 0) {
 
     // echo $user['name'];
 
-
+                                                                                                    
 
 } else {
-    $_SESSION['message'] = "Неверный логин или пароль";
+    $_SESSION['message'] = "Неверный Email или Номер";
     header('Location: ../index.php');
 }
 
