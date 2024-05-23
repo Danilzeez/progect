@@ -79,6 +79,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Готовим SQL-запрос для предотвращения SQL-инъекций
         $stmt = $connect->prepare("INSERT INTO `users` (`id`, `name`, `email`, `number`) VALUES (NULL, ?, ?, ?)");
         $stmt->bind_param("sss", $name, $email, $number);
+        echo "SQL: $sql<br>";
 
         // Выполняем запрос и проверяем успех
         if ($stmt->execute()) {
