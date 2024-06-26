@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Создание уникального продукта</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #ef277a34 0%, #7934be88 30%, #9796F0 60%, #fbc7d48c 100%);
+            color: #fff;
+            padding: 40px 20px;
+            text-align: left;
+            position: relative;
+        }
+
+        .header img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            float: right;
+            margin-top: -80px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        .header p {
+            margin: 10px 0 20px 0;
+            font-size: 18px;
+            color: #000;
+        }
+
+        .header button {
+            background-color: #5c28a1;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .header button:hover {
+            background-color: #7934be;
+        }
+
+        .content {
+            padding: 20px;
+            background: #fff;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            margin-top: -30px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            margin-top: 0;
+            font-size: 28px;
+        }
+
+        .product-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .product-item {
+            background: #f0f0f0;
+            padding: 20px;
+            border-radius: 10px;
+            width: calc(33% - 20px);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .product-item img {
+            width: 100%;
+            max-width: 150px;
+            margin-bottom: 10px;
+        }
+
+        .info-section {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .info-section div {
+            width: 30%;
+            margin-bottom: 20px;
+        }
+
+        .info-section h2 {
+            font-size: 24px;
+        }
+
+        .info-section p {
+            font-size: 16px;
+        }
+
+        .faq-section h2 {
+            font-size: 24px;
+        }
+
+        .faq-section p {
+            font-size: 16px;
+        }
+
+        .contact-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+        }
+
+        .contact-section div {
+            width: 45%;
+        }
+
+        .contact-section h2 {
+            font-size: 24px;
+            margin-top: 0;
+        }
+
+        .contact-section p {
+            font-size: 16px;
+        }
+
+        .contact-section input, .contact-section button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-section button {
+            background-color: #5c28a1;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .contact-section button:hover {
+            background-color: #7934be;
+        }
+
+        .accordion {
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 18px;
+            transition: 0.4s;
+        }
+
+        .accordion:after {
+            content: '\002B';
+            color: #777;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+
+        .accordion.active:after {
+            content: "\2212";
+        }
+
+        .panel {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header" style="width: 100%; height: 500px;">
+    <h1>Нужно создать уникальный продукт для вашей компании?</h1>
+    <p>Пошив? Печать? Мы это делаем и это делаем. Это включает, например, создание индивидуальной брендированной одежды.</p>
+    <button>Написать менеджеру</button>
+    <img src="..\Img\woman-tailor-choosing-threads-factory 1.png" style="width: 700px; height: 100%;">
+</div>
+
+<div class="content">
+    <div class="section">
+        <h2>Мы можем создать</h2>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="your_product_image_url_here" alt="Шапки">
+                <p>Шапки</p>
+            </div>
+            <div class="product-item">
+                <img src="your_product_image_url_here" alt="Худи">
+                <p>Худи</p>
+            </div>
+            <div class="product-item">
+                <img src="your_product_image_url_here" alt="Свитшоты">
+                <p>Свитшоты</p>
+            </div>
+            <div class="product-item">
+                <img src="your_product_image_url_here" alt="Футболки">
+                <p>Футболки</p>
+            </div>
+            <div class="product-item">
+                <img src="your_product_image_url_here" alt="Футболки">
+                <p>Футболки</p>
+            </div>
+            <div class="product-item">
+                <img src="your_product_image_url_here" alt="Футболки">
+                <p>Футболки</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Сроки изготовления</h2>
+        <p>Наши сроки изготовления зависят от сложности заказа и наличия материалов. Средний срок составляет от 5 до 14 дней.</p>
+    </div>
+    <div class="section">
+        <h2>Стоимость</h2>
+        <p>Стоимость рассчитывается индивидуально в зависимости от сложности и объема заказа. Мы предлагаем гибкие условия оплаты для наших клиентов.</p>
+    </div>
+    <div class="section">
+        <h2>Брендирование</h2>
+        <p>Мы предлагаем различные способы брендирования вашей продукции: вышивка, шелкография, термоперенос. Выберите лучший способ для вашего бренда.</p>
+    </div>
+</div>
+
+<div class="faq-section content">
+    <h2>Часто задаваемые вопросы</h2>
+    <button class="accordion">Материал</button>
+    <div class="panel">
+        <p>Вы можете заказать у нас пошив толстовок из любого вида материалов:</p>
+        <ul>
+            <li>Хлопок 100%</li>
+            <li>Хлопок/полиэстер 85/15%</li>
+        </ul>
+    </div>
+    <button class="accordion">Как заказать</button>
+    <div class="panel">
+        <p>Выберите из готовых моделей или отправьте нам свой дизайн для пошива.</p>
+    </div>
+    <button class="accordion">Оплата и доставка</button>
+    <div class="panel">
+        <p>Оплата и доставка производится по согласованию с клиентом.</p>
+    </div>
+    <button class="accordion">Свежее дыхание в корпоративной жизни</button>
+    <div class="panel">
+        <p>Мы предоставляем свежие идеи для вашего бизнеса и корпоративной жизни.</p>
+    </div>
+</div>
+
+<div class="contact-section content">
+    <div>
+        <h2>Контакты</h2>
+        <p>example@gmail.com</p>
+        <p>+380 630 130 103</p>
+    </div>
+    <div>
+        <h2>Свяжитесь с нами</h2>
+        <p>Введите свои контактные данные, и наш менеджер свяжется с вами в течении 15 минут.</p>
+        <input type="text" placeholder="Ваше имя">
+        <input type="text" placeholder="Ваш телефон">
+        <button>Заказать</button>
+    </div>
+</div>
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            } 
+        });
+    }
+</script>
+
+</body>
+</html>

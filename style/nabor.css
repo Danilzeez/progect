@@ -1,0 +1,184 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+.header {
+    background: linear-gradient(135deg, #ef277a34 0%, #7934be88 30%, #9796F0 60%, #fbc7d48c 100%);
+    color: #fff;
+    padding: 40px 20px;
+    text-align: left;
+    position: relative;
+}
+
+.header img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    float: right;
+    margin-top: -80px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.header p {
+    margin: 10px 0 20px 0;
+    font-size: 18px;
+    color: #000;
+}
+
+.header button {
+    background-color: #5c28a1;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.header button:hover {
+    background-color: #7934be;
+}
+
+.content {
+    padding: 20px;
+    background: #fff;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-top: -30px;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.section h2 {
+    margin-top: 0;
+    font-size: 28px;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product-item {
+    background: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    width: calc(33% - 20px);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.product-item img {
+    width: 100%;
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+
+.info-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.info-section div {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.info-section h2 {
+    font-size: 24px;
+}
+
+.info-section p {
+    font-size: 16px;
+}
+
+.faq-section h2 {
+    font-size: 24px;
+}
+
+.faq-section p {
+    font-size: 16px;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
+
+.contact-section div {
+    width: 45%;
+}
+
+.contact-section h2 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.contact-section p {
+    font-size: 16px;
+}
+
+.contact-section input, .contact-section button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-section button {
+    background-color: #5c28a1;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-section button:hover {
+    background-color: #7934be;
+}
+
+.accordion {
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    transition: 0.4s;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.accordion.active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
