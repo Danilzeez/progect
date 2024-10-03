@@ -95,7 +95,7 @@ main {
   .lang {margin-top: 10px;
     flex: 40%;
     size: center;
-
+    margin-right: 10px;
   }
   
   .lang button {
