@@ -92,10 +92,12 @@ main {
   margin-top:26px ;
   }
   
-  .lang {margin-top: 30px;
+  .lang {margin-top: 10px;
     flex: 40%;
     size: center;
-margin-left: 20px;
+    margin-right: 10px;
+    margin-top: 25px;
+    margin-left: 10px;
   }
   
   .lang button {
@@ -218,7 +220,7 @@ margin-left: 20px;
   .dropdown2:hover .dropdown-content2 {display: block;}
   
   .dropdown2:hover .dropbtn2 {background-color: #000000; color: #ffffff;}
-
+  
   .dropbtn3 {
     background-color: #4caf4f00;
     color: rgb(0, 0, 0);
@@ -254,6 +256,60 @@ margin-left: 20px;
   
   .dropdown3:hover .dropbtn3 {background-color: #000000; color: #ffffff;}
   
+  .dropbtn4 {
+    background-color: #4caf4f00;
+    color: rgb(0, 0, 0);
+    padding:26px;
+    font-size: 30px;
+    border: none;
+  }
+  
+  .dropdown4 {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content4 {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgb(255, 255, 255);
+    z-index: 1;
+  }
+  
+  .dropdown-content4 a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content4 a:hover {background-color: #ffffff; color: #003cff;}
+  
+  .dropdown4:hover .dropdown-content4 {display: block;}
+  
+  .dropdown4:hover .dropbtn4 {background-color: #000000; color: #ffffff;}
+  
+  .shoper {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .text_shop1 {
+      margin-left: 50px;
+  }
+  
+  .text_shoper {
+    flex: 30%;
+  
+  }
+  
+  .shoper_img {
+    margin-left: 60%;
+    display: block;
+    opacity: 0.5; /* Устанавливает полупрозрачность изображения */
+  }
   .dropbtn4 {
     background-color: #4caf4f00;
     color: rgb(0, 0, 0);

@@ -20,6 +20,21 @@ main {
       background: linear-gradient(45deg, rgb(195, 181, 236) 0%, #7934be88 30%, #9796F0 60% , #fbc7d48c 100%)
   }
   
+  main {
+    background-color: #211E1E;
+    height: 100%;
+    width: 80%;
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    top: 0px;
+  }
+  .main1 {
+    height: 100%;
+      display: flex;
+      background: linear-gradient(45deg, rgb(195, 181, 236) 0%, #7934be88 30%, #9796F0 60% , #fbc7d48c 100%)
+  }
+  
   .log{
     margin-top: 5px;
       flex: 20%;
@@ -95,7 +110,9 @@ main {
   .lang {margin-top: 10px;
     flex: 40%;
     size: center;
-    margin-right: 10px;
+    margin-right: 1px;
+    margin-top: 25px;
+    margin-left: 10px;
   }
   
   .lang button {
@@ -288,7 +305,26 @@ main {
   .dropdown4:hover .dropdown-content4 {display: block;}
   
   .dropdown4:hover .dropbtn4 {background-color: #000000; color: #ffffff;}
-
+  
+  .shoper {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .text_shop1 {
+      margin-left: 50px;
+  }
+  
+  .text_shoper {
+    flex: 30%;
+  
+  }
+  
+  .shoper_img {
+    margin-left: 60%;
+    display: block;
+    opacity: 0.5; /* Устанавливает полупрозрачность изображения */
+  }
 .header {
     background: linear-gradient(135deg, #ef277a34 0%, #7934be88 30%, #9796F0 60%, #fbc7d48c 100%);
     color: #fff;
