@@ -1,7 +1,7 @@
 <?php
 
     session_start();
-    require_once 'connect.php';
+    require_once '../connect.php';
 
     $full_name = $_POST['full_name'];
     $login = $_POST['login'];

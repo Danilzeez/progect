@@ -1,7 +1,7 @@
 <?php
     session_start();
     if ($_SESSION['user']) {
-        header('Location: profile.php');
+        header('Location: ../profile.php');
     }
 ?>
 
@@ -10,7 +10,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Авторизация и регистрация</title>
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="style/main.css">
 </head>
 <body>
 
@@ -31,7 +31,7 @@
         <input type="password" name="password_confirm" placeholder="Подтвердите пароль">
         <button type="submit">Войти</button>
         <p>
-            У вас уже есть аккаунт? - <a href="/index.php">авторизируйтесь</a>!
+            У вас уже есть аккаунт? - <a href="../index.php">авторизируйтесь</a>!
         </p>
         <?php
             if ($_SESSION['message']) {
