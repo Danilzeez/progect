@@ -10,7 +10,7 @@ if (!$_SESSION['user']) {
 <head>
     <meta charset="UTF-8">
     <title>Авторизация и регистрация</title>
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="style/main.css">
 </head>
 <body>
 
